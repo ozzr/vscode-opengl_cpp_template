@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe compilar archivo activo",
+			"command": "g++",
+			"args": [
+				"-g",
+				"-std=c++17",
+				"-I./include",
+				"-L./lib",
+				"${file}",
+				"src/glad.c",
+				"-lglfw3dll",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compilador: D:\\Android\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
